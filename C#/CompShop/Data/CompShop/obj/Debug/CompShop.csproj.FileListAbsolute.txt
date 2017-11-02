@@ -1,0 +1,72 @@
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\bin\Debug\CompShop.exe.config
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\bin\Debug\CompShop.exe
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\bin\Debug\CompShop.pdb
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.SingIN.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.Properties.Resources.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.exe
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.pdb
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.MainForm.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.AdPonel.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.Tov.resources
+C:\Users\freek\Desktop\testFOlD\CompShop\CompShop\bin\Debug\CompShop.exe.config
+C:\Users\freek\Desktop\testFOlD\CompShop\CompShop\obj\Debug\CompShop.exe
+C:\Users\freek\Desktop\testFOlD\CompShop\CompShop\obj\Debug\CompShop.pdb
+C:\Users\freek\Desktop\CompShop\CompShop\bin\Debug\CompShop.exe.config
+C:\Users\freek\Desktop\CompShop\CompShop\obj\Debug\CompShop.exe
+C:\Users\freek\Desktop\CompShop\CompShop\obj\Debug\CompShop.pdb
+C:\Users\freek\Desktop\CompShop\CompShop\bin\Debug\Client.mdb
+C:\Users\freek\Desktop\CompShop\CompShop\bin\Debug\CompShop.exe
+C:\Users\freek\Desktop\CompShop\CompShop\bin\Debug\CompShop.pdb
+C:\Users\freek\Desktop\CompShop\CompShop\obj\Debug\CompShop.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\CompShop\CompShop\obj\Debug\CompShop.AdPonel.resources
+C:\Users\freek\Desktop\CompShop\CompShop\obj\Debug\CompShop.SingIN.resources
+C:\Users\freek\Desktop\CompShop\CompShop\obj\Debug\CompShop.MainForm.resources
+C:\Users\freek\Desktop\CompShop\CompShop\obj\Debug\CompShop.Properties.Resources.resources
+C:\Users\freek\Desktop\CompShop\CompShop\obj\Debug\CompShop.Tov.resources
+C:\Users\freek\Desktop\CompShop\CompShop\obj\Debug\CompShop.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\bin\Debug\Client.mdb
+C:\Users\freek\Desktop\Money\Zen9\CompShop\CompShop\obj\Debug\CompShop.Facilyty.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.AdPonel.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.Facilyty.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.MainForm.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.Properties.Resources.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.SingIN.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.Tov.resources
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.exe
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\obj\Debug\CompShop.pdb
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\bin\Debug\CompShop.exe.config
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\bin\Debug\Client.mdb
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\bin\Debug\CompShop.exe
+C:\Users\freek\Desktop\Money\Zen9\CompShop\Data\CompShop\bin\Debug\CompShop.pdb
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\bin\Debug\Client.mdb
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\bin\Debug\CompShop.exe.config
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\bin\Debug\CompShop.exe
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\bin\Debug\CompShop.pdb
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.AdPonel.resources
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.Facilyty.resources
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.MainForm.resources
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.Properties.Resources.resources
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.SingIN.resources
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.Tov.resources
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.exe
+C:\Users\freek\Desktop\Money\Zen9\Tonkar enterprise software\Data\CompShop\obj\Debug\CompShop.pdb
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\bin\Debug\Client.mdb
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\bin\Debug\CompShop.exe.config
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\bin\Debug\CompShop.exe
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\bin\Debug\CompShop.pdb
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.csprojResolveAssemblyReference.cache
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.AdPonel.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.Facilyty.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.MainForm.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.Properties.Resources.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.SingIN.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.Tov.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.csproj.GenerateResource.Cache
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.exe
+C:\Users\freek\Documents\GitHub\Portfolio\C#\CompShop\Data\CompShop\obj\Debug\CompShop.pdb

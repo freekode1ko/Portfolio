@@ -1,0 +1,39 @@
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\bin\Debug\TECshop.exe.config
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\bin\Debug\TecShop.mdb
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\bin\Debug\TECshop.exe
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\bin\Debug\TECshop.pdb
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\obj\Debug\TECshop.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\obj\Debug\TECshop.Form1.resources
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\obj\Debug\TECshop.Properties.Resources.resources
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\obj\Debug\TECshop.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\obj\Debug\TECshop.exe
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\obj\Debug\TECshop.pdb
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\obj\Debug\TECshop.Form2.resources
+C:\Users\freek\Desktop\I hope t work\TECshop\TECshop\obj\Debug\TECshop.Form3.resources
+C:\Users\freek\Desktop\TECshop\TECshop\bin\Debug\TECshop.exe.config
+C:\Users\freek\Desktop\TECshop\TECshop\obj\Debug\TECshop.exe
+C:\Users\freek\Desktop\TECshop\TECshop\obj\Debug\TECshop.pdb
+C:\Users\freek\Desktop\TECshop\TECshop\obj\Debug\TECshop.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\TECshop\TECshop\obj\Debug\TECshop.Form1.resources
+C:\Users\freek\Desktop\TECshop\TECshop\obj\Debug\TECshop.Form2.resources
+C:\Users\freek\Desktop\TECshop\TECshop\obj\Debug\TECshop.Form3.resources
+C:\Users\freek\Desktop\TECshop\TECshop\obj\Debug\TECshop.Properties.Resources.resources
+C:\Users\freek\Desktop\TECshop\TECshop\obj\Debug\TECshop.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\TECshop\TECshop\bin\Debug\TecShop.mdb
+C:\Users\freek\Desktop\TECshop\TECshop\bin\Debug\TECshop.exe
+C:\Users\freek\Desktop\TECshop\TECshop\bin\Debug\TECshop.pdb
+C:\Users\freek\Desktop\TECshop\Data\TECshop\bin\Debug\TECshop.exe.config
+C:\Users\freek\Desktop\TECshop\Data\TECshop\obj\Debug\TECshop.exe
+C:\Users\freek\Desktop\TECshop\Data\TECshop\obj\Debug\TECshop.pdb
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\bin\Debug\TecShop.mdb
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\bin\Debug\TECshop.exe.config
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\bin\Debug\TECshop.exe
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\bin\Debug\TECshop.pdb
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\obj\Debug\TECshop.csprojResolveAssemblyReference.cache
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\obj\Debug\TECshop.Log.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\obj\Debug\TECshop.Client.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\obj\Debug\TECshop.Busines.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\obj\Debug\TECshop.Properties.Resources.resources
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\obj\Debug\TECshop.csproj.GenerateResource.Cache
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\obj\Debug\TECshop.exe
+C:\Users\freek\Documents\GitHub\Portfolio\C#\TECshop\Data\TECshop\obj\Debug\TECshop.pdb

@@ -1,0 +1,1 @@
+start https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=new

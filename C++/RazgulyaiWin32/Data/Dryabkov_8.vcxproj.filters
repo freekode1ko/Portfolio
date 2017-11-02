@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{5bea7381-68ab-4b27-a625-3d61f5ebe609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logo">
+      <UniqueIdentifier>{7fc19fe8-fbfe-4351-a6b1-68427feade07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Promo">
+      <UniqueIdentifier>{3a4684a3-3736-423e-8447-de66940e4eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{d646aff9-5f4c-44cb-b18b-f939cf1b66d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="About">
+      <UniqueIdentifier>{fbb84020-f593-4ba4-ab23-11470ff32d16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tools.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="Promo.h">
+      <Filter>Promo</Filter>
+    </ClInclude>
+    <ClInclude Include="FileData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="About.h">
+      <Filter>About</Filter>
+    </ClInclude>
+    <ClInclude Include="Dryabkov_8.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="Promo.cpp">
+      <Filter>Promo</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="About.cpp">
+      <Filter>About</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dryabkov_8.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
