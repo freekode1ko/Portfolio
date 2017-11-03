@@ -1,0 +1,19 @@
+AddDefaultCharset utf-8
+php_flag magic_quotes_gpc Off
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php
+
+
+#RewriteRule ^product/([a-z0-9-]+) product.php?product=$1
+#RewriteRule ^category/(\d+) index.php?category=$1 [QSA]
+
+# product.php?product=11608
+# product/11608
+
+# ?category=691
+# category/691
