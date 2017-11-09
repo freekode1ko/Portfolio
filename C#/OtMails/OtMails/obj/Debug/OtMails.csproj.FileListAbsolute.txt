@@ -1,0 +1,33 @@
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\bin\Debug\OtMails.exe.config
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\bin\Debug\OtMails.exe
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\bin\Debug\OtMails.pdb
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\obj\Debug\OtMails.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\obj\Debug\OtMails.Properties.Resources.resources
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\obj\Debug\OtMails.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\obj\Debug\OtMails.exe
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\obj\Debug\OtMails.pdb
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\bin\Debug\MAILS.mdb
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\obj\Debug\OtMails.BD.resources
+C:\Users\freek\Desktop\Money\Ol\OtMails\OtMails\obj\Debug\OtMails.MainForm.resources
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\bin\Debug\OtMails.exe.config
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\obj\Debug\OtMails.exe
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\obj\Debug\OtMails.pdb
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\bin\Debug\MAILS.mdb
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\bin\Debug\OtMails.exe
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\bin\Debug\OtMails.pdb
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\obj\Debug\OtMails.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\obj\Debug\OtMails.BD.resources
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\obj\Debug\OtMails.MainForm.resources
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\obj\Debug\OtMails.Properties.Resources.resources
+C:\Users\freek\Desktop\Trash\OtMails\OtMails\obj\Debug\OtMails.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\bin\Debug\MAILS.mdb
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\bin\Debug\OtMails.exe.config
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\bin\Debug\OtMails.exe
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\bin\Debug\OtMails.pdb
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\obj\Debug\OtMails.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\obj\Debug\OtMails.BD.resources
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\obj\Debug\OtMails.MainForm.resources
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\obj\Debug\OtMails.Properties.Resources.resources
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\obj\Debug\OtMails.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\obj\Debug\OtMails.exe
+C:\Users\freek\Desktop\Trash\Составить счета\Data\OtMails\OtMails\obj\Debug\OtMails.pdb
