@@ -11,8 +11,8 @@ namespace OtMails
     {
         string FORhu, ComNamSen, FilNameSen;
         string FileFormat = ".jpg";                     //Default File format on send
-        string MailPass = "naoiQ77TENty";               //Mail password
-        string MailFrom = "SaturnTravel@yandex.ru";     //Mail of the sender
+        string MailPass = "Mail password";               //Mail password
+        string MailFrom = "Exemp@Domain.com";     //Mail of the sender
         bool ActCheck;                                  //Check for the need for an act
 
         private async void SendAct_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace OtMails
         }
         private void оРазработчикеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Разработчик: Олег Дрябков +7 (985) 199-83-12", "О разработчике");          //show about
+            MessageBox.Show("Разработчик: Олег Дрябков ", "О разработчике");          //show about
         }
 
         private void помощьToolStripMenuItem_Click(object sender, EventArgs e)
