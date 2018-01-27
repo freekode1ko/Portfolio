@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Data;
+using System.Threading.Tasks;
 
 namespace WordTest
 {
@@ -20,6 +21,7 @@ namespace WordTest
 
         private void GenerateBut_Click(object sender, EventArgs e)
         {
+            Lb_StatusBar.Text = "Формирование";
             if (Z_Name.Text == "" || Z_Name.Text == " ") { Z_Name.Text = "Заказчик"; }                  //error protection on an empty value
             if (Z_COL.Text == "" || Z_COL.Text == " ") { Z_COL.Text = "0"; }                            //error protection on an empty value
             SUM = Convert.ToInt32(Z_COL.Text) * 100;                                                    //finding the cost for the services provided
@@ -57,6 +59,7 @@ namespace WordTest
                     wordDoc.ReplaceAllStrings("@@FD",FPast);                                            //replace @@FD in template with value of a variable FPast
                     wordDoc.ReplaceAllStrings("@@LD",LPast);                                            //replace @@LD in template with value of a variable LPast
                     wordDoc.ReplaceAllStrings("@@NN",NN.Text);                                          //replace @@NN in template with value in NN TextBox
+                    wordDoc.ReplaceAllStrings("@@DatOfCre", Z_DatOfCre.Text);                           //replace @@DatOfCre in template with value in NN TextBox
 
                     if (Z_URadr.Text == "")                                                             //if URadr fild is empty than replace @@URadr else do same but add "Юридический адрес: "
                     { wordDoc.ReplaceAllStrings("@@URadr", Z_URadr.Text); }
@@ -73,6 +76,7 @@ namespace WordTest
                     if (Z_KPP.Text == "")                                                               //if KPP fild is empty than replace @@KPP else do same but add "КПП: "
                     { wordDoc.ReplaceAllStrings("@@KPP", Z_KPP.Text); }
                     else { wordDoc.ReplaceAllStrings("@@KPP", "КПП:" + Z_KPP.Text); }
+                    Lb_StatusBar.Text = "Готово";
                 }
                
             }
@@ -80,6 +84,7 @@ namespace WordTest
             {
                 if (wordDoc != null) { wordDoc.Close(); }                         //if microsoft word not find
                 MessageBox.Show("Ошибка при замене текста на метке в документе  Word. Подробности: " + error.Message);
+                Lb_StatusBar.Text = "Ошибка";
                 return;
             }
             wordDoc.Save(@"C:\Act\" + Z_Name.Text + ".doc");            //save document as company name.doc
@@ -195,6 +200,7 @@ namespace WordTest
 
         private void DocForm_Load(object sender, EventArgs e)
         {
+            DbList.CellDoubleClick += DbList_CellDoubleClick;
             conn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;" +
                            @"Data Source= MainBD.mdb");                                     //connect to database
 
@@ -220,8 +226,10 @@ namespace WordTest
             DbList.Columns[9].HeaderText = "КПП";
             DbList.Columns[10].HeaderText = "Колличество";
             DbList.Columns[11].HeaderText = "№ договора";
+            DbList.Columns[12].HeaderText = "Дата создания";
+            DbList.Columns[12].Width = 135;
 
-            //columns 1-9 is read only
+            //columns 1-9,12 is read only
             DbList.Columns[1].ReadOnly = true;
             DbList.Columns[2].ReadOnly = true;
             DbList.Columns[3].ReadOnly = true;
@@ -231,6 +239,7 @@ namespace WordTest
             DbList.Columns[7].ReadOnly = true;
             DbList.Columns[8].ReadOnly = true;
             DbList.Columns[9].ReadOnly = true;
+            DbList.Columns[12].ReadOnly = true;
         }
 
         private void SearchBut_Click(object sender, EventArgs e)
@@ -252,9 +261,10 @@ namespace WordTest
                             Z_KPP.Text = DbList.Rows[i].Cells[j + 8].Value.ToString();                  //load Code of reason in the field
                             Z_COL.Text = DbList.Rows[i].Cells[j + 9].Value.ToString();                  //load Number of services in the field
                             replaceStrTextBox.Text = DbList.Rows[i].Cells[j + 10].Value.ToString();     //load Number of contract in the field
+                            Z_DatOfCre.Text = DbList.Rows[i].Cells[j + 11].Value.ToString();
                             break;
                         }
-                        
+                DelSymb();
             }
         }
 
@@ -271,6 +281,8 @@ namespace WordTest
             Z_KPP.Text = DbList.Rows[e.RowIndex].Cells[9].Value.ToString();                                 //load Code of reason in the field
             Z_COL.Text = DbList.Rows[e.RowIndex].Cells[10].Value.ToString();                                //load Number of services in the field
             replaceStrTextBox.Text = DbList.Rows[e.RowIndex].Cells[11].Value.ToString();                    //load Number of contract in the field
+            Z_DatOfCre.Text = DbList.Rows[e.RowIndex].Cells[12].Value.ToString();                           //load Date of creation in the field
+            DelSymb();                                                                                      //remove time symb from date
         }
 
         private void сбросИзмененийToolStripMenuItem_Click(object sender, EventArgs e)
@@ -281,23 +293,79 @@ namespace WordTest
             Z_BIK.Text = "";                                //
             Z_OGRN.Text = "";                               //
             Z_URadr.Text = "";                              //erase all data
-            Z_COL.Text = "0";                               //and restore to default
-            Z_KPP.Text = "";                                //
+            Z_COL.Text = "0";                               //
+            Z_KPP.Text = "";                                //and restore to default
             Z_Ks.Text = "";                                 //
             Z_Rs.Text = "";                                 //
+            Z_DatOfCre.Text = "";                           //
             replaceStrTextBox.Text = "";                    //
             pathTextBox.Text = "Shab.docx";                 //
         }
 
-        private void сформироватьВсеToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void сформироватьВсеToolStripMenuItem_Click(object sender, EventArgs e)
         {
-         
-            for (int i = 0; i < DbList.RowCount; i++)                                   //do until reach the last line
+            Z_Name.Enabled = false;                                     //
+            NN.Enabled = false;                                         //
+            Z_INN.Enabled = false;                                      //
+            Z_BIK.Enabled = false;                                      //
+            Z_OGRN.Enabled = false;                                     //
+            Z_URadr.Enabled = false;                                    //
+            Z_COL.Enabled = false;                                      //
+            Z_KPP.Enabled = false;                                      //
+            Z_Ks.Enabled = false;                                       //  Disabling UI for sefety
+            Z_Rs.Enabled = false;                                       //
+            Z_DatOfCre.Enabled = false;                                 //
+            replaceStrTextBox.Enabled = false;                          //
+            pathTextBox.Enabled = false;                                //
+            справкаToolStripMenuItem.Enabled = false;                   //
+            сбросИзмененийToolStripMenuItem.Enabled = false;            //
+            сформироватьВсеToolStripMenuItem.Enabled = false;           //
+            сохранитьИзмененияToolStripMenuItem.Enabled = false;        //
+            увеличитьНомерДоговораToolStripMenuItem.Enabled = false;    //
+            GenerateBut.Enabled = false;                                //
+            SearchBut.Enabled = false;                                  //
+
+            await GenerateAllDocs();                                    //  Run generate documents
+
+            Z_Name.Enabled = true;                                      //
+            NN.Enabled = true;                                          //
+            Z_INN.Enabled = true;                                       //
+            Z_BIK.Enabled = true;                                       //
+            Z_OGRN.Enabled = true;                                      //
+            Z_URadr.Enabled = true;                                     //
+            Z_COL.Enabled = true;                                       //
+            Z_KPP.Enabled = true;                                       //
+            Z_Ks.Enabled = true;                                        //  Аctivation UI
+            Z_Rs.Enabled = true;                                        //
+            Z_DatOfCre.Enabled = true;                                  //
+            replaceStrTextBox.Enabled = true;                           //
+            pathTextBox.Enabled = true;                                 //
+            справкаToolStripMenuItem.Enabled = true;                    //
+            сбросИзмененийToolStripMenuItem.Enabled = true;             //
+            сформироватьВсеToolStripMenuItem.Enabled = true;            //
+            сохранитьИзмененияToolStripMenuItem.Enabled = true;         // 
+            увеличитьНомерДоговораToolStripMenuItem.Enabled = true;     //
+            GenerateBut.Enabled = true;                                 //
+            SearchBut.Enabled = true;                                   //
+        }
+
+        private Task GenerateAllDocs()
+        {
+            return Task.Run(() =>
             {
-                Z_Name.Text = DbList.Rows[i].Cells[1].Value.ToString();                 //get name company
-                SearchBut_Click(this, EventArgs.Empty);                                 //search company and load into text boxes
-                GenerateBut_Click(this, EventArgs.Empty);                               //generate documents
-            }
+               
+                int CompletedCounter = 0;
+
+                for (int i = 0; i < DbList.RowCount; i++)                                   //do until reach the last line
+                {
+                    Z_Name.Text = DbList.Rows[i].Cells[1].Value.ToString();                 //get name company
+                    SearchBut_Click(this, EventArgs.Empty);                                 //search company and load into text boxes
+                    GenerateBut_Click(this, EventArgs.Empty);                               //generate documents
+                    CompletedCounter++;
+                }
+                MessageBox.Show("Успешно сформированных документов: " + CompletedCounter + " из " + DbList.RowCount);
+
+            });
         }
 
         private void сохранитьИзмененияToolStripMenuItem_Click(object sender, EventArgs e)
@@ -321,6 +389,17 @@ namespace WordTest
                     DbList.Rows[i].Cells[11].Value = 0;                                                     //else cell value = 0
                 }
             }
+        }
+        private void DelSymb()
+        {
+            string s = Z_DatOfCre.Text;
+
+            if (s.Length > 10)
+            {
+                s = s.Substring(0, s.Length - 8);
+            }
+
+            Z_DatOfCre.Text = s;
         }
     }
 
