@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace OtMails
 {
@@ -10,53 +11,77 @@ namespace OtMails
     {
         string FORhu, ComNamSen, FilNameSen;
         string FileFormat = ".jpg";                     //Default File format on send
-        string MailPass = "Password";               //Mail password
-        string MailFrom = "Mail@yandex.ru";     //Mail of the sender
-        int Rn,i;
+        string MailPass = "naoiQ77TENty";               //Mail password
+        string MailFrom = "SaturnTravel@yandex.ru";     //Mail of the sender
         bool ActCheck;                                  //Check for the need for an act
 
-        private void SendAct_Click(object sender, EventArgs e)
+        private async void SendAct_Click(object sender, EventArgs e)
         {
             ActStatus.Text = "Отправка";
-            Rn = 0;
-            i = 0;
-            int j = MailList.ColumnCount - 1;
+            int Rn = 0;
+            int i = 0;
             int ErrorCounter = 0;                   //error counter for sending act
             int Sended = 0;                         //number of sended acts
-            while (Rn <= MailList.RowCount - 1)     //while row count more or equal run number
-            {
-                if (i <= MailList.RowCount - 1)
-                {
-                    MailList.CurrentCell = MailList.Rows[i].Cells[0];           //start from the beginning
-                    FORhu = MailList.CurrentRow.Cells[0].Value.ToString();      // Get mail for hu need
-                    ComNamSen = MailList.CurrentRow.Cells[1].Value.ToString();  // Get companu name
-                    ActCheck = Convert.ToBoolean(MailList.CurrentRow.Cells[2].Value);  // Need akt or not
-                    i++;
-                    if (ActCheck == true)                                       //if the act must be sent to this sender, then take the file along the necessary path
-                    {
-                        FilNameSen = Path.GetFullPath("\\Act\\" + "Акт " + ComNamSen + FileFormat); //set path for file
-                        if (FilNameSen != null)                                                     //if path is not empty, than send mail
-                        {
-                            SendMail("smtp.yandex.ru", MailFrom, MailPass, FORhu, "Счёт за ТО", MailText.Text, FilNameSen);         //send mail
-                            j--;
-                            Rn++;
-                            Sended++;
-                        }
-                        else
-                        { ErrorCounter++;}
-                    }else { 
-                        if (i == MailList.RowCount)    //If the pointer at the end of the mallist than end 
-                            break;
-                    }
-                }
-               }
-            //update status
-            OutLog.Items.Add ("Колличество ошибок при отправке актов: " + ErrorCounter);
-            OutLog.Items.Add("Колличество успешно отправленых актов: " + Sended);
-            OutLog.Items.Add("-----------------------------------------------------------------------------------------------------------------");
-            ActStatus.Text = "Готово";
+            ActSend.Enabled = false;
+            ScoreSend.Enabled = false;
+
+            await SendAct(Rn, i, ErrorCounter, Sended);
         }
 
+        private Task SendAct(int Rn, int i, int ErrorCounter, int Sended)
+        { 
+            return Task.Run(() =>
+            {
+                while (Rn <= MailList.RowCount - 1)     //while row count more or equal run number
+                {
+
+                    try
+                    {
+                        if (i <= MailList.RowCount - 1)
+                        {
+                            MailList.CurrentCell = MailList.Rows[i].Cells[0];           //start from the beginning
+                            FORhu = MailList.CurrentRow.Cells[0].Value.ToString();      // Get mail for hu need
+                            ComNamSen = MailList.CurrentRow.Cells[1].Value.ToString();  // Get companu name
+                            ActCheck = Convert.ToBoolean(MailList.CurrentRow.Cells[2].Value);  // Need akt or not
+                            i++;
+                            if (ActCheck == true)                                       //if the act must be sent to this sender, then take the file along the necessary path
+                            {
+                                FilNameSen = Path.GetFullPath("\\Act\\" + "Акт " + ComNamSen + FileFormat); //set path for file
+                                if (FilNameSen != null)                                                     //if path is not empty, than send mail
+                                {
+                                    SendMail("smtp.yandex.ru", MailFrom, MailPass, FORhu, "Счёт за ТО", MailText.Text, FilNameSen);         //send mail
+                                    Rn++;
+                                    Sended++;
+                                    OutLog.Items.Add("Отправлен Акт: " + ComNamSen + " \\ " + FORhu);
+                                }
+
+                            }
+                        }
+                        else { break; }     //If the pointer at the end of the mallist than end
+
+                    }
+                    catch (Exception ex)
+                    {
+                        ErrorCounter++;
+                        Rn++;
+                        OutLog.Items.Add("Ошибка отправки: " + ex.Message);
+                    }
+                }
+                if (Sended == 0 && ErrorCounter == 0)
+                { ActStatus.Text = "Проверте выборку актов для отпраки!"; }
+                if (Sended != 0 || ErrorCounter != 0)
+                {
+                    //update status
+                    OutLog.Items.Add("-----------------------------------------------------------------------------------------------------------------");
+                    OutLog.Items.Add("Колличество ошибок при отправке актов: " + ErrorCounter);
+                    OutLog.Items.Add("Колличество успешно отправленых актов: " + Sended);
+                    OutLog.Items.Add("-----------------------------------------------------------------------------------------------------------------");
+                    ActStatus.Text = "Готово";
+                }
+                ActSend.Enabled = true;
+                ScoreSend.Enabled = true;
+            });
+        }
         private void оРазработчикеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Разработчик: Олег Дрябков +7 (985) 199-83-12", "О разработчике");          //show about
@@ -110,6 +135,47 @@ namespace OtMails
         {
             InitializeComponent();
         }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            string path = @"c:\Act\Log.txt";
+            if (!File.Exists(path))
+            {
+                using (StreamWriter sw = File.CreateText(path))
+                {
+                    sw.WriteLine("[" + DateTime.Now + "]");
+                    sw.WriteLine("[Что отправлено: Кому отправлено \\ на какую почту]");
+                    sw.WriteLine("__________________________________________________________________________________________________________________");
+                    int i = 1;
+                    while (i < OutLog.Items.Count)
+                    {
+                        sw.WriteLine(OutLog.Items[i]);
+                        i++;
+                    }
+                    if (i == 1)
+                        sw.WriteLine("Ничего не сформировано");
+                }
+            }
+            else
+            {
+                using (StreamWriter sw = File.AppendText(path))
+                {
+                    sw.WriteLine("__________________________________________________________________________________________________________________");
+                    sw.WriteLine("[" + DateTime.Now + "]");
+                    sw.WriteLine("__________________________________________________________________________________________________________________");
+                    int i = 1;
+                    while (i < OutLog.Items.Count)
+                        {
+                        sw.WriteLine(OutLog.Items[i-1]);
+                        i++;
+                        }
+                    if (i == 1)
+                        sw.WriteLine("Ничего не сформировано");
+                }
+            }
+
+        }
+
         public static void SendMail(string smtpServer, string from, string password,
         string mailto, string caption, string message, string attachFile = null)
         {
@@ -134,45 +200,63 @@ namespace OtMails
             }
             catch (Exception e)
             {
-                throw new Exception("Mail.Send: " + e.Message);
+                throw new Exception(" " + e.Message);
             }
         }
-        private void CheckSend_Click(object sender, EventArgs e)
+        private async void CheckSend_Click(object sender, EventArgs e)
         {
             ScoreStatus.Text = "Отправка";
-            Rn = 0;
-            i = 0;
-            int j = MailList.ColumnCount - 1;
+            int Rn = 0;
             int ErrorCounter = 0;                   //error counter for sending act
             int Sended = 0;                         //number of sended acts
-            while (Rn <= MailList.RowCount - 1)     //while row count more or equal run number
-            {
-                if (i <= MailList.RowCount -1 )
-                {
-                    MailList.CurrentCell = MailList.Rows[i].Cells[0];               //start from the beginning
-                    FORhu = MailList.CurrentRow.Cells[0].Value.ToString();          // Get mail for hu need
-                    ComNamSen = MailList.CurrentRow.Cells[1].Value.ToString();      //Get companu name
-                    FilNameSen = Path.GetFullPath("\\Act\\"+ComNamSen+ FileFormat); //set path for file
-                    if (FilNameSen != null)                                         //if path is not empty, than send mail
-                    {
-                        SendMail("smtp.yandex.ru", MailFrom, MailPass, FORhu, "Счёт за ТО", MailText.Text, FilNameSen);     //send mail
-                        i++;
-                        j--;
-                        Rn++;
-                        Sended++;
-                    }
-                    else
-                        {ErrorCounter ++;}
-                }
-                
-            }
-            //update status
-            OutLog.Items.Add ("Колличествово ошибок при отпавке счетов: " + ErrorCounter);
-            OutLog.Items.Add("Колличество успешно отправленых счетов: " + Sended);
-            OutLog.Items.Add("-----------------------------------------------------------------------------------------------------------------");
-            ScoreStatus.Text = "Готово";
+            ActSend.Enabled = false;
+            ScoreSend.Enabled = false;
+
+            await SendChek(Rn, ErrorCounter, Sended);
         }
 
+        private Task SendChek(int Rn, int ErrorCounter, int Sended)
+        {
+            return Task.Run(() =>
+            {
+
+                while (Rn <= MailList.RowCount - 1)     //while row count more or equal run number
+                {
+                    Application.DoEvents();
+                    try
+                    {
+                        MailList.CurrentCell = MailList.Rows[Rn].Cells[0];               //start from the beginning
+                        FORhu = MailList.CurrentRow.Cells[0].Value.ToString();          // Get mail for hu need
+                        ComNamSen = MailList.CurrentRow.Cells[1].Value.ToString();      //Get companu name
+                        FilNameSen = Path.GetFullPath("\\Act\\" + ComNamSen + FileFormat); //set path for file
+                        if (FilNameSen != null)                                         //if path is not empty, than send mail
+                        {
+                            SendMail("smtp.yandex.ru", MailFrom, MailPass, FORhu, "Счёт за ТО", MailText.Text, FilNameSen);     //send mail
+                            Rn++;
+                            Sended++;
+                            OutLog.Items.Add("Отправлен Счет: " + ComNamSen + " \\ " + FORhu);
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        ErrorCounter++;
+                        Rn++;
+                        OutLog.Items.Add("Ошибка отправки " + ex.Message);
+
+                    }
+
+                }
+                //update status
+                OutLog.Items.Add("-----------------------------------------------------------------------------------------------------------------");
+                OutLog.Items.Add("Колличествово ошибок при отпавке счетов: " + ErrorCounter);
+                OutLog.Items.Add("Колличество успешно отправленых счетов: " + Sended);
+                OutLog.Items.Add("-----------------------------------------------------------------------------------------------------------------");
+                ScoreStatus.Text = "Готово";
+                ActSend.Enabled = true;
+                ScoreSend.Enabled = true;
+            });
+        }
         private void Main_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'mAILSDataSet.Smail' table. You can move, or remove it, as needed.

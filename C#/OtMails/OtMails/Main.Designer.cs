@@ -292,7 +292,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
-            this.Text = "Отправка счётов за тех.обслуживание";
+            this.Text = "Отправка счётов за тех.обслуживание v.1.0";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MailList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smailBindingSource)).EndInit();
