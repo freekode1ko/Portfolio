@@ -11,6 +11,7 @@ namespace WordTest
         OleDbConnection conn;
         OleDbDataAdapter adapter;
         DataTable dt = new DataTable();
+        ProgressBar PB = new ProgressBar();
         private string pathToTemplate { get { return Application.StartupPath + "\\" + pathTextBox.Text; } }         //path to template
         int SUM;                                                                                                    //cost for the services provided
         string NTW;                                                                                                 //Result of function numToWord
@@ -36,44 +37,44 @@ namespace WordTest
                 wordDoc = new WordDocument(pathToTemplate);                                             //create word document
                 if (replaceAllСheckBox.Checked)                                                         //hiden checkbox with check status = checked by default (necessary for further updates)
                 {
-                    wordDoc.ReplaceAllStrings("@@Kol", Z_COL.Text);                                     //replace @@Kol in template with value in Z_COL TextBox
-                    wordDoc.ReplaceAllStrings("@@NameZak", Z_Name.Text);                                //replace @@NameZak in template with value in Z_Name TextBox
+                    wordDoc.ReplaceAllStrings("@@Kol", Z_COL.Text);                                     //replace tag "@@Ko"l in template with value in Z_COL TextBox
+                    wordDoc.ReplaceAllStrings("@@NameZak", Z_Name.Text);                                //replace tag "@@NameZak" in template with value in Z_Name TextBox
 
-                    if (Z_OGRN.Text == "")                                                              //if OGRN fild is empty than replace @@OGRN else do same but add "ОГРН: "
+                    if (Z_OGRN.Text == "")                                                              //if OGRN fild is empty than replace tag in template "@@OGRN" else do same but add "ОГРН: "
                     { wordDoc.ReplaceAllStrings("@@OGRN", Z_OGRN.Text); }
                     else { wordDoc.ReplaceAllStrings("@@OGRN", "ОГРН: " + Z_OGRN.Text); }
 
-                    if (Z_INN.Text == "")                                                               //if INN fild is empty than replace @@INN else do same but add "ИНН: "
+                    if (Z_INN.Text == "")                                                               //if INN fild is empty than replace tag in template "@@INN" else do same but add "ИНН: "
                     { wordDoc.ReplaceAllStrings("@@INN", Z_INN.Text); }   
                     else {wordDoc.ReplaceAllStrings("@@INN", "ИНН: " + Z_INN.Text);}
 
-                    if (Z_BIK.Text == "")                                                               //if BIK fild is empty than replace @@BIK else do same but add "БИК: "
+                    if (Z_BIK.Text == "")                                                               //if BIK fild is empty than replace tag in template "@@BIK" else do same but add "БИК: "
                     { wordDoc.ReplaceAllStrings("@@BIK", Z_BIK.Text);}
                     else { wordDoc.ReplaceAllStrings("@@BIK", "БИК: " + Z_BIK.Text); }
 
-                    wordDoc.ReplaceAllStrings("@@NumDog", replaceStrTextBox.Text);                      //replace @@NumDog in template with value in replaceStrTextBox TextBox
+                    wordDoc.ReplaceAllStrings("@@NumDog", replaceStrTextBox.Text);                      //replace tag in doc "@@NumDog" in template with value in replaceStrTextBox TextBox
                     wordDoc.Selection.Aligment = TextAligment.Center;                                   //centering text in document
-                    wordDoc.ReplaceAllStrings("@@SUM",SUM.ToString());                                  //replace @@SUM in template with value in SUM TextBox
-                    wordDoc.ReplaceAllStrings("@@Today",thisDay.ToString("dd.MM.yyyy") +"г");           //replace @@Today in template with value of a variable thisDay 
-                    wordDoc.ReplaceAllStrings("@@NumToWord", NTW);                                      //replace @@NumToWord in template with value of a variable NTW
-                    wordDoc.ReplaceAllStrings("@@FD",FPast);                                            //replace @@FD in template with value of a variable FPast
-                    wordDoc.ReplaceAllStrings("@@LD",LPast);                                            //replace @@LD in template with value of a variable LPast
-                    wordDoc.ReplaceAllStrings("@@NN",NN.Text);                                          //replace @@NN in template with value in NN TextBox
-                    wordDoc.ReplaceAllStrings("@@DatOfCre", Z_DatOfCre.Text);                           //replace @@DatOfCre in template with value in NN TextBox
+                    wordDoc.ReplaceAllStrings("@@SUM",SUM.ToString());                                  //replace tag "@@SUM" in template with value in SUM TextBox
+                    wordDoc.ReplaceAllStrings("@@Today",thisDay.ToString("dd.MM.yyyy") +"г");           //replace tag "@@Today" in template with value of a variable thisDay 
+                    wordDoc.ReplaceAllStrings("@@NumToWord", NTW);                                      //replace tag "@@NumToWord" in template with value of a variable NTW
+                    wordDoc.ReplaceAllStrings("@@FD",FPast);                                            //replace tag "@@FD" in template with value of a variable FPast
+                    wordDoc.ReplaceAllStrings("@@LD",LPast);                                            //replace tag "@@LD" in template with value of a variable LPast
+                    wordDoc.ReplaceAllStrings("@@NN",NN.Text);                                          //replace tag "@@NN" in template with value in NN TextBox
+                    wordDoc.ReplaceAllStrings("@@DatOfCre", Z_DatOfCre.Text);                           //replace tag "@@DatOfCre" in template with value in NN TextBox
 
-                    if (Z_URadr.Text == "")                                                             //if URadr fild is empty than replace @@URadr else do same but add "Юридический адрес: "
+                    if (Z_URadr.Text == "")                                                             //if URadr fild is empty than replace tag "@@URadr" else do same but add "Юридический адрес: "
                     { wordDoc.ReplaceAllStrings("@@URadr", Z_URadr.Text); }
                     else { wordDoc.ReplaceAllStrings("@@URadr", "Юридический адрес:" + Z_URadr.Text);}
 
-                    if (Z_Rs.Text == "")                                                                //if Rs fild is empty than replace @@RS else do same but add "Р/С: "
+                    if (Z_Rs.Text == "")                                                                //if Rs fild is empty than replace tag "@@RS" else do same but add "Р/С: "
                     { wordDoc.ReplaceAllStrings("@@RS", Z_Rs.Text); }
                     else { wordDoc.ReplaceAllStrings("@@RS", "Р/С:" + Z_Rs.Text); }
 
-                    if (Z_Ks.Text == "")                                                                //if Ks fild is empty than replace @@KS else do same but add "К/С: "
+                    if (Z_Ks.Text == "")                                                                //if Ks fild is empty than replace tag "@@KS" else do same but add "К/С: "
                     { wordDoc.ReplaceAllStrings("@@KS", Z_Ks.Text); }
                     else { wordDoc.ReplaceAllStrings("@@KS", "К/С:" + Z_Ks.Text); }
 
-                    if (Z_KPP.Text == "")                                                               //if KPP fild is empty than replace @@KPP else do same but add "КПП: "
+                    if (Z_KPP.Text == "")                                                               //if KPP fild is empty than replace tag "@@KPP" else do same but add "КПП: "
                     { wordDoc.ReplaceAllStrings("@@KPP", Z_KPP.Text); }
                     else { wordDoc.ReplaceAllStrings("@@KPP", "КПП:" + Z_KPP.Text); }
                     Lb_StatusBar.Text = "Готово";
@@ -87,7 +88,7 @@ namespace WordTest
                 Lb_StatusBar.Text = "Ошибка";
                 return;
             }
-            wordDoc.Save(@"C:\Act\" + Z_Name.Text + ".doc");            //save document as company name.doc
+            wordDoc.Save(@"C:\Act\" + Z_Name.Text + ".doc");            //save document as "company name.doc"
             wordDoc.Visible = false;                                    //windows visible control
             wordDoc.Close();                                            //free space
         }
@@ -240,6 +241,7 @@ namespace WordTest
             DbList.Columns[8].ReadOnly = true;
             DbList.Columns[9].ReadOnly = true;
             DbList.Columns[12].ReadOnly = true;
+
         }
 
         private void SearchBut_Click(object sender, EventArgs e)
@@ -261,7 +263,7 @@ namespace WordTest
                             Z_KPP.Text = DbList.Rows[i].Cells[j + 8].Value.ToString();                  //load Code of reason in the field
                             Z_COL.Text = DbList.Rows[i].Cells[j + 9].Value.ToString();                  //load Number of services in the field
                             replaceStrTextBox.Text = DbList.Rows[i].Cells[j + 10].Value.ToString();     //load Number of contract in the field
-                            Z_DatOfCre.Text = DbList.Rows[i].Cells[j + 11].Value.ToString();
+                            Z_DatOfCre.Text = DbList.Rows[i].Cells[j + 11].Value.ToString();            //load Date of creation in the field
                             break;
                         }
                 DelSymb();
@@ -312,9 +314,9 @@ namespace WordTest
             Z_URadr.Enabled = false;                                    //
             Z_COL.Enabled = false;                                      //
             Z_KPP.Enabled = false;                                      //
-            Z_Ks.Enabled = false;                                       //  Disabling UI for sefety
-            Z_Rs.Enabled = false;                                       //
-            Z_DatOfCre.Enabled = false;                                 //
+            Z_Ks.Enabled = false;                                       //  
+            Z_Rs.Enabled = false;                                       // 
+            Z_DatOfCre.Enabled = false;                                 // Disabling UI for sefety
             replaceStrTextBox.Enabled = false;                          //
             pathTextBox.Enabled = false;                                //
             справкаToolStripMenuItem.Enabled = false;                   //
@@ -324,6 +326,11 @@ namespace WordTest
             увеличитьНомерДоговораToolStripMenuItem.Enabled = false;    //
             GenerateBut.Enabled = false;                                //
             SearchBut.Enabled = false;                                  //
+
+            PB.Location = new System.Drawing.Point(12, 380);            //set progresbar location
+            PB.Size = new System.Drawing.Size(240, 23);                 //set progresbar size
+            this.Controls.Add(PB);                                      //set progresbar parent
+            this.PB.BringToFront();                                     //sent progresbar to front
 
             await GenerateAllDocs();                                    //  Run generate documents
 
@@ -335,9 +342,9 @@ namespace WordTest
             Z_URadr.Enabled = true;                                     //
             Z_COL.Enabled = true;                                       //
             Z_KPP.Enabled = true;                                       //
-            Z_Ks.Enabled = true;                                        //  Аctivation UI
+            Z_Ks.Enabled = true;                                        //  
             Z_Rs.Enabled = true;                                        //
-            Z_DatOfCre.Enabled = true;                                  //
+            Z_DatOfCre.Enabled = true;                                  // Аctivation UI
             replaceStrTextBox.Enabled = true;                           //
             pathTextBox.Enabled = true;                                 //
             справкаToolStripMenuItem.Enabled = true;                    //
@@ -347,13 +354,16 @@ namespace WordTest
             увеличитьНомерДоговораToolStripMenuItem.Enabled = true;     //
             GenerateBut.Enabled = true;                                 //
             SearchBut.Enabled = true;                                   //
+
+            this.Controls.Remove(PB);                                   //free space
+
         }
 
         private Task GenerateAllDocs()
         {
             return Task.Run(() =>
             {
-               
+                PB.Maximum = DbList.RowCount;
                 int CompletedCounter = 0;
 
                 for (int i = 0; i < DbList.RowCount; i++)                                   //do until reach the last line
@@ -361,10 +371,10 @@ namespace WordTest
                     Z_Name.Text = DbList.Rows[i].Cells[1].Value.ToString();                 //get name company
                     SearchBut_Click(this, EventArgs.Empty);                                 //search company and load into text boxes
                     GenerateBut_Click(this, EventArgs.Empty);                               //generate documents
+                    PB.Value++;
                     CompletedCounter++;
                 }
                 MessageBox.Show("Успешно сформированных документов: " + CompletedCounter + " из " + DbList.RowCount);
-
             });
         }
 
@@ -392,14 +402,8 @@ namespace WordTest
         }
         private void DelSymb()
         {
-            string s = Z_DatOfCre.Text;
-
-            if (s.Length > 10)
-            {
-                s = s.Substring(0, s.Length - 8);
-            }
-
-            Z_DatOfCre.Text = s;
+            if (Z_DatOfCre.Text.Length > 10)                                                                                  //If text from a textbox is more than 10 characters
+                Z_DatOfCre.Text = Z_DatOfCre.Text.Substring(0, Z_DatOfCre.Text.Length - (Z_DatOfCre.Text.Length - 10));       //remove excess
         }
     }
 
