@@ -1,0 +1,5 @@
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\x86\Debug\WordTest.csproj.ResolveComReference.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\x86\Debug\WordTest.DocForm.resources
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\x86\Debug\WordTest.Properties.Resources.resources
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\x86\Debug\WordTest.csproj.GenerateResource.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\x86\Debug\WordTest.csproj.CoreCompileInputs.cache

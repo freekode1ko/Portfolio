@@ -1,0 +1,75 @@
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\bin\Debug\WordTest.exe
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\bin\Debug\WordTest.pdb
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\obj\Debug\WordTest.FormTestWord.resources
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\obj\Debug\WordTest.csproj.GenerateResource.Cache
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\obj\Debug\WordTest.exe
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\obj\Debug\WordTest.pdb
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.dll
+C:\Documents and Settings\a.v.stepanov\Мои документы\Visual Studio 2008\Projects\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+D:\1VEDOMIR\TEMP\WordTest\WordTest\obj\Debug\WordTest.exe
+D:\1VEDOMIR\TEMP\WordTest\WordTest\obj\Debug\WordTest.pdb
+D:\1VEDOMIR\TEMP\WordTest\WordTest\bin\Debug\WordTest.exe
+D:\1VEDOMIR\TEMP\WordTest\WordTest\bin\Debug\WordTest.pdb
+D:\1VEDOMIR\TEMP\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.dll
+D:\1VEDOMIR\TEMP\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+D:\1VEDOMIR\TEMP\WordTest\WordTest\obj\Debug\ResolveAssemblyReference.cache
+D:\1VEDOMIR\TEMP\WordTest\WordTest\obj\Debug\WordTest.FormTestWord.resources
+D:\1VEDOMIR\TEMP\WordTest\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+D:\1VEDOMIR\TEMP\WordTest\WordTest\obj\Debug\WordTest.csproj.GenerateResource.Cache
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\obj\Debug\WordTest.exe
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\obj\Debug\WordTest.pdb
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\bin\Debug\WordTest.exe
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\bin\Debug\WordTest.pdb
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.dll
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\obj\Debug\WordTest.FormTestWord.resources
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+D:\WORK\ОБЩИЕ КЛАССЫ\WordTest\WordTest\obj\Debug\WordTest.csproj.GenerateResource.Cache
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\obj\Debug\WordTest.exe
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\obj\Debug\WordTest.pdb
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\bin\Debug\WordTest.exe
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\bin\Debug\WordTest.pdb
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.dll
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\obj\Debug\ResolveAssemblyReference.cache
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\obj\Debug\WordTest.FormTestWord.resources
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\WORK\MERCURIAL-PROJECTS\WordTest\WordTest\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\freek\Desktop\WordTest\WordTest\bin\Debug\WordTest.exe.config
+C:\Users\freek\Desktop\WordTest\WordTest\obj\Debug\WordTest.exe
+C:\Users\freek\Desktop\WordTest\WordTest\obj\Debug\WordTest.pdb
+C:\Users\freek\Desktop\WordTest\WordTest\bin\Debug\WordTest.exe
+C:\Users\freek\Desktop\WordTest\WordTest\bin\Debug\WordTest.pdb
+C:\Users\freek\Desktop\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+C:\Users\freek\Desktop\WordTest\WordTest\obj\Debug\WordTest.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\WordTest\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+C:\Users\freek\Desktop\WordTest\WordTest\obj\Debug\WordTest.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\WordTest\WordTest\obj\Debug\WordTest.DocForm.resources
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\bin\Debug\WordTest.exe.config
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\bin\Debug\WordTest.exe
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\bin\Debug\WordTest.pdb
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\obj\Debug\WordTest.csprojResolveAssemblyReference.cache
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\obj\Debug\WordTest.DocForm.resources
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\obj\Debug\WordTest.csproj.GenerateResource.Cache
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\obj\Debug\WordTest.exe
+C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\obj\Debug\WordTest.pdb
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\bin\Debug\WordTest.exe.config
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\bin\Debug\WordTest.exe
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\bin\Debug\WordTest.pdb
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csprojAssemblyReference.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.DocForm.resources
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csproj.GenerateResource.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csproj.CoreCompileInputs.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csproj.CopyComplete
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.exe
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.pdb
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csproj.ResolveComReference.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\Interop.LCC11.dll
