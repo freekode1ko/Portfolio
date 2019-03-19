@@ -59,3 +59,17 @@ C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTes
 C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\obj\Debug\WordTest.csproj.GenerateResource.Cache
 C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\obj\Debug\WordTest.exe
 C:\Users\freek\Desktop\Trash\Составить счета\Data\WordTest\WordTest\obj\Debug\WordTest.pdb
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\bin\Debug\WordTest.exe.config
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\bin\Debug\WordTest.exe
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\bin\Debug\WordTest.pdb
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csprojAssemblyReference.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.DocForm.resources
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csproj.GenerateResource.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csproj.CoreCompileInputs.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csproj.CopyComplete
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.exe
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.pdb
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csproj.ResolveComReference.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\Interop.LCC11.dll

@@ -202,10 +202,11 @@ namespace WordTest
         private void DocForm_Load(object sender, EventArgs e)
         {
             DbList.CellDoubleClick += DbList_CellDoubleClick;
-            conn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;" +
-                           @"Data Source= MainBD.mdb");                                     //connect to database
+            // conn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.14.0;" +
+            conn = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0;" + @"Data Source= MainBD.mdb"); //connect to database
+           // Provider = Microsoft.Jet.OLEDB.4.0; Data Source = E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\bin\Debug\MainBD.mdb
 
-            adapter = new OleDbDataAdapter("SELECT * FROM ZAKAZ", conn);                    //get data from table "Zakaz"
+                 adapter = new OleDbDataAdapter("SELECT * FROM ZAKAZ", conn);                    //get data from table "Zakaz"
             new OleDbCommandBuilder(adapter);
             adapter.Fill(dt);                                                               
             DbList.DataSource = dt;                                                         //fill datagrid with data from databse
@@ -368,11 +369,14 @@ namespace WordTest
 
                 for (int i = 0; i < DbList.RowCount; i++)                                   //do until reach the last line
                 {
-                    Z_Name.Text = DbList.Rows[i].Cells[1].Value.ToString();                 //get name company
-                    SearchBut_Click(this, EventArgs.Empty);                                 //search company and load into text boxes
-                    GenerateBut_Click(this, EventArgs.Empty);                               //generate documents
-                    PB.Value++;
-                    CompletedCounter++;
+                    if (Convert.ToInt32(DbList.Rows[i].Cells[10].Value) > 0)                // if count > 0 than create bill
+                    {
+                        Z_Name.Text = DbList.Rows[i].Cells[1].Value.ToString();                 //get name company
+                        SearchBut_Click(this, EventArgs.Empty);                                 //search company and load into text boxes
+                        GenerateBut_Click(this, EventArgs.Empty);                               //generate documents
+                        PB.Value++;
+                        CompletedCounter++;
+                    }
                 }
                 MessageBox.Show("Успешно сформированных документов: " + CompletedCounter + " из " + DbList.RowCount);
             });
