@@ -230,6 +230,11 @@ namespace WordTest
             DbList.Columns[11].HeaderText = "№ договора";
             DbList.Columns[12].HeaderText = "Дата создания";
             DbList.Columns[12].Width = 135;
+            DataGridViewCheckBoxColumn dgvbc = new DataGridViewCheckBoxColumn();
+            DbList.Columns.Add(dgvbc);
+            DbList.Columns[13].HeaderText = "Акт?";
+            DbList.Columns[13].Width = 50;
+
 
             //columns 1-9,12 is read only
             DbList.Columns[1].ReadOnly = true;
@@ -408,6 +413,51 @@ namespace WordTest
         {
             if (Z_DatOfCre.Text.Length > 10)                                                                                  //If text from a textbox is more than 10 characters
                 Z_DatOfCre.Text = Z_DatOfCre.Text.Substring(0, Z_DatOfCre.Text.Length - (Z_DatOfCre.Text.Length - 10));       //remove excess
+        }
+
+        private void составитьАКТToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lb_StatusBar.Text = "Формирование";
+            CreateACTS(1);                                                                  //call create selected ACT
+            Lb_StatusBar.Text = "Готово";
+        }
+
+        private void CreateACTS(int ActCount)
+        {
+            int today = DateTime.Now.Day;
+            string LPast = DateTime.Now.AddDays(-today).ToString("dd.MM.yyyy");
+            SUM = Convert.ToInt32(Z_COL.Text) * 100;
+            numToWord();
+            CreateAct.CreateAct.Create(ActCount, replaceStrTextBox.Text, LPast, Z_Name.Text, Z_URadr.Text, Z_INN.Text, Z_BIK.Text, Z_OGRN.Text, Z_Rs.Text, Z_Ks.Text, Z_KPP.Text, NN.Text, Z_DatOfCre.Text, Z_COL.Text, SUM.ToString(), NTW, pathToTemplate);
+        }
+
+        private void составитьВсеАКТыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lb_StatusBar.Text = "Формирование";
+            int today = DateTime.Now.Day;
+            string LPast = DateTime.Now.AddDays(-today).ToString("dd.MM.yyyy");
+
+            PB.Maximum = DbList.RowCount;
+            int CompletedCounter = 0;
+            int selected4create = 0;
+
+            for (int i = 0; i < DbList.RowCount; i++)                                   //do until reach the last line
+            {
+                if (Convert.ToBoolean(DbList.Rows[i].Cells[13].Value) == true)          //if selected row is checked
+                {
+                    selected4create++;                                                  //+1 for output
+                    if (Convert.ToInt32(DbList.Rows[i].Cells[10].Value) > 0)                // if count > 0 than create ACT
+                    {
+                        Z_Name.Text = DbList.Rows[i].Cells[1].Value.ToString();                 //get name company
+                        SearchBut_Click(this, EventArgs.Empty);                                 //search company and load into text boxes
+                        CreateACTS(1);                                                          //call create selected ACT
+                        PB.Value++;                                                             //Next
+                        CompletedCounter++;
+                    }
+                }
+            }
+            MessageBox.Show("Успешно сформированных документов: " + CompletedCounter + " из " + selected4create);
+            Lb_StatusBar.Text = "Готово";
         }
     }
 

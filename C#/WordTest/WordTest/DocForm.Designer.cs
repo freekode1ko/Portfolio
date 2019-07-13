@@ -53,6 +53,8 @@
             this.сформироватьВсеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьИзмененияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.увеличитьНомерДоговораToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.составитьАКТToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.составитьВсеАКТыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DbList = new System.Windows.Forms.DataGridView();
             this.Z_URadr = new System.Windows.Forms.TextBox();
             this.Lb_UrAdr = new System.Windows.Forms.Label();
@@ -239,7 +241,9 @@
             this.сбросИзмененийToolStripMenuItem,
             this.сформироватьВсеToolStripMenuItem,
             this.сохранитьИзмененияToolStripMenuItem,
-            this.увеличитьНомерДоговораToolStripMenuItem});
+            this.увеличитьНомерДоговораToolStripMenuItem,
+            this.составитьАКТToolStripMenuItem,
+            this.составитьВсеАКТыToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
@@ -282,10 +286,27 @@
             this.увеличитьНомерДоговораToolStripMenuItem.Text = "Увеличить номер договора";
             this.увеличитьНомерДоговораToolStripMenuItem.Click += new System.EventHandler(this.увеличитьНомерДоговораToolStripMenuItem_Click);
             // 
+            // составитьАКТToolStripMenuItem
+            // 
+            this.составитьАКТToolStripMenuItem.Name = "составитьАКТToolStripMenuItem";
+            this.составитьАКТToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
+            this.составитьАКТToolStripMenuItem.Text = "Составить АКТ";
+            this.составитьАКТToolStripMenuItem.Click += new System.EventHandler(this.составитьАКТToolStripMenuItem_Click);
+            // 
+            // составитьВсеАКТыToolStripMenuItem
+            // 
+            this.составитьВсеАКТыToolStripMenuItem.Name = "составитьВсеАКТыToolStripMenuItem";
+            this.составитьВсеАКТыToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
+            this.составитьВсеАКТыToolStripMenuItem.Text = "Составить все АКТы";
+            this.составитьВсеАКТыToolStripMenuItem.Click += new System.EventHandler(this.составитьВсеАКТыToolStripMenuItem_Click);
+            // 
             // DbList
             // 
             this.DbList.AllowUserToAddRows = false;
             this.DbList.AllowUserToDeleteRows = false;
+            this.DbList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DbList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DbList.Location = new System.Drawing.Point(356, 33);
             this.DbList.Name = "DbList";
@@ -484,5 +505,7 @@
         private System.Windows.Forms.TextBox Z_DatOfCre;
         private System.Windows.Forms.Label Lb_DatOfCre;
         private System.Windows.Forms.Label Lb_StatusBar;
+        private System.Windows.Forms.ToolStripMenuItem составитьАКТToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem составитьВсеАКТыToolStripMenuItem;
     }
 }

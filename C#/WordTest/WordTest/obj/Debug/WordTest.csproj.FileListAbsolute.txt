@@ -73,3 +73,35 @@ E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Deb
 E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.pdb
 E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\WordTest.csproj.ResolveComReference.cache
 E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest - Copy\WordTest\obj\Debug\Interop.LCC11.dll
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\bin\Debug\WordTest.exe.config
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\bin\Debug\WordTest.exe
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\bin\Debug\WordTest.pdb
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\WordTest.csprojAssemblyReference.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\Interop.LCC11.dll
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\WordTest.csproj.ResolveComReference.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\WordTest.DocForm.resources
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\WordTest.csproj.GenerateResource.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\WordTest.csproj.CoreCompileInputs.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\WordTest.csproj.CopyComplete
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\WordTest.exe
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\obj\Debug\WordTest.pdb
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\bin\Debug\CreateAct.dll
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\WordTest\WordTest\bin\Debug\CreateAct.pdb
+E:\GIT\Portfolio\C#\WordTest\WordTest\bin\Debug\WordTest.exe.config
+E:\GIT\Portfolio\C#\WordTest\WordTest\bin\Debug\WordTest.exe
+E:\GIT\Portfolio\C#\WordTest\WordTest\bin\Debug\WordTest.pdb
+E:\GIT\Portfolio\C#\WordTest\WordTest\bin\Debug\CreateAct.dll
+E:\GIT\Portfolio\C#\WordTest\WordTest\bin\Debug\CreateAct.pdb
+E:\GIT\Portfolio\C#\WordTest\WordTest\bin\Debug\Microsoft.Office.Interop.Word.xml
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\WordTest.csprojAssemblyReference.cache
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\Interop.LCC11.dll
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\WordTest.csproj.ResolveComReference.cache
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\WordTest.DocForm.resources
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\WordTest.Properties.Resources.resources
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\WordTest.csproj.GenerateResource.cache
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\WordTest.csproj.CoreCompileInputs.cache
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\WordTest.csproj.CopyComplete
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\WordTest.exe
+E:\GIT\Portfolio\C#\WordTest\WordTest\obj\Debug\WordTest.pdb
