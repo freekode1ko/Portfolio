@@ -1,0 +1,6 @@
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\CreateAct\bin\Debug\CreateAct.dll
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\CreateAct\bin\Debug\CreateAct.pdb
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\CreateAct\obj\Debug\CreateAct.csprojAssemblyReference.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\CreateAct\obj\Debug\CreateAct.csproj.CoreCompileInputs.cache
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\CreateAct\obj\Debug\CreateAct.dll
+E:\ElderShit\OldDesk\Trash\CreateDocuments\Data\CreateAct\obj\Debug\CreateAct.pdb
